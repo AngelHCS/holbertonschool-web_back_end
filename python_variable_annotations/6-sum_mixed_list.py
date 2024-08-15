@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from typing import Union,List
+from typing import Union, List
 
 """imports typing library"""
 
