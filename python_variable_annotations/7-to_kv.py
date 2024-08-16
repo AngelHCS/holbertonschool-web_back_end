@@ -8,4 +8,4 @@ def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     """Defines a function, K as a string,V as int or float returns tuple"""
 
 
-return (k, float(v ** 2))
+    return (k, float(v ** 2))
