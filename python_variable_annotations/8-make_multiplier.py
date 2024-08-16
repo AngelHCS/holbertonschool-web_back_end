@@ -5,10 +5,10 @@ from typing import Callable
 
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
-    #comment here
+    # comment here
 
     def multiplier_function(x: float) -> float:
-        #comment
+        # comment
 
         return x * multiplier
     return multiplier_function
