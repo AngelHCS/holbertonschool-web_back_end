@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+
+""" sets interpreter """
+
 import math
 
 """Imports math library"""
