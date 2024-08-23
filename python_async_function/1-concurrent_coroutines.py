@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
+
+""" Setting interpreter """
+
 import asyncio
 from typing import List
 import random
 
-# intro comment
-
 
 async def wait_random(max_delay: int = 10) -> float:
 
-    # Function comment
+    """ Function """
 
     delay = random.uniform(0, max_delay)
     await asyncio.sleep(delay)
@@ -17,7 +18,7 @@ async def wait_random(max_delay: int = 10) -> float:
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
 
-    # Function comment
+    """ Function """
 
     tasks = [wait_random(max_delay) for _ in range(n)]
     delays = []
