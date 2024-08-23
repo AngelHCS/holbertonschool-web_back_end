@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
+
+""" set python3 interpreter """
+
 import asyncio
 import time
 from typing import List
 import random
 
-# intro comment
+""" intro comment (Libraries) """
 
 
 async def wait_random(max_delay: int) -> float:
 
-    # function comment
+    """ wait_random function """
 
     delay = random.uniform(0, max_delay)
     await asyncio.sleep(delay)
@@ -18,7 +21,7 @@ async def wait_random(max_delay: int) -> float:
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
 
-    # function comment
+    """ function comment """
 
     tasks = [wait_random(max_delay) for _ in range(n)]
     delays = await asyncio.gather(*tasks)
@@ -27,7 +30,7 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
 
 def measure_time(n: int, max_delay: int) -> float:
 
-    # function comment
+    """ function comment """
 
     start_time = time.time()
     asyncio.run(wait_n(n, max_delay))
