@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
+
+""" Sets interpreter to python3 """
+
 from typing import Union, List
 
-"""imports typing library"""
+
+""" imports typing library """
 
 
 def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
